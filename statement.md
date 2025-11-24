@@ -2,27 +2,24 @@
 
 ## Problem statement
 
-Small schools, clubs, and community centers often need a lightweight way to manage their book collections and track loans, but they lack access to a simple, offline tool that is easy to run and maintain. Existing solutions can be complex, require databases or internet access, or demand technical skills to install and operate.
+Many small schools, clubs, and community groups need an easy way to keep record of their books and track which books are taken. But they do not have a simple offline tool that is easy to use. Most available systems are difficult, need databases or internet, and require technical knowledge. That is why a simple and easy-to-run Library Management System is needed.
 
 ## Scope of the project
 
-This project provides a compact, file-based Library Management System implemented as a Python command-line program. It supports core operations needed for day-to-day library tasks: adding and managing book records, issuing and returning books, and tracking due/late loans. The scope intentionally excludes multi-user concurrency, secure authentication, and advanced reporting.
+This project is a small and simple Library Management System made in Python. It works using text files and runs in the command line. It helps in basic library work like adding books, keeping records, giving books to students, taking returns, and checking late books. This project does not include things like multi-user login, security, or advanced reports because it is made only for simple and basic use.
 
 ## Target users
 
-- Small schools, student clubs, and community libraries with modest collections
-- Teachers or volunteers with basic comfort running Python scripts or command-line programs
-- Learners who want a simple example of file-based data management
+-Small schools, student clubs, and community libraries that have only a few books.
+-Teachers or helpers who know a little bit of Python or can run simple command-line programs.
+-Students who want an easy example of how to store and manage data using text files.
 
 ## High-level features
 
-- Add, update, delete, and list book records stored in a plain text file (`library.txt`).
-- Search books by title (case-insensitive substring match).
-- Issue books to students: record student name/id, issue date, and due date in `issued_books.txt`; decrement available quantity.
-- Return books: increment quantity, remove the corresponding issued record, and compute fines for late returns.
-- View issued books, due books, and late books from the issued records file.
-- Minimal dependencies: runs with Python 3 and uses plain text files for persistence.
+-We can add, update, delete, and show book records that are saved in a simple text file called library.txt.
+-We can search for books by their title, even if we type only part of the name.
+-We can issue books to students by saving their name/ID, the issue date, and due date in issued_books.txt. The number of available copies is also reduced.
+-When a book is returned, the quantity increases again, the issue record is removed, and the fine is calculated if the book is late.
+-We can see all issued books, books that are due soon, and books that are already late by checking the issued records file.
+-This system needs almost no special setup. It only uses Python 3 and simple text files to store the data.
 
----
-
-If you want the statement expanded into a short project proposal or converted into a presentation slide, I can generate that next.
